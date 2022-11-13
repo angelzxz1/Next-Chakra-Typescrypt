@@ -23,8 +23,7 @@ const Main = ({ children, router, title }: Props) => {
 					type="image/x-icon"
 				/>
 				<title>
-					Yom cosplay -
-					{title === "notFound" ? " Page not found" : title}
+					{title === "notFound" ? " - Page not found" : `- ${title}`}
 				</title>
 			</Head>
 			<NavBar path={router.asPath} />
